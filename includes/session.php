@@ -49,4 +49,4 @@
 	*/
 	
 
-// End of session.php – do NOT add any whitespace, new lines, or closing ?> tag after this line
+// End of session.php – do NOT add any whitespace, new lines, or closing PHP tag after this line
