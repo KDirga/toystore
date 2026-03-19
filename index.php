@@ -40,7 +40,7 @@
 
   		    <!-- TO-DO: Display the toy image and update the alt text to the toy name
                         Hint: Access the values from the $toy1 array (what are the column names in the database?) -->
-  			<img src="<?= $toy1['imagePath'] ?>" alt="<?= $toy1['name'] ?>">
+			<img src="<?= $toy1['img_src'] ?>" alt="<?= $toy1['name'] ?>">
   		</a>
 
   		<!-- TO-DO: Display the name of the toy
