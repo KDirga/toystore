@@ -41,12 +41,22 @@
 
 	
 
-	/* TO-DO: Create a function called authenticate() that:
+	/* Create a function called authenticate() that:
           1. Accepts $pdo, username, and password as parameters
           2. Queries the customer table to find a row matching the provided username and password
           3. Executes the SQL query using the pdo() helper function and fetches the result
           4. Returns the matching user row if found
 	*/
+	function authenticate($pdo, $username, $password) {
+		// Find user with matching username and password
+	    $sql = "SELECT * 
+				FROM customer 
+				WHERE username = :username AND password = :password";
+
+		// Execute query and fetch result
+	    $stmt = pdo($pdo, $sql, ['username' => $username, 'password' => $password]);
+	    return $stmt->fetch();
+	}
 	
 
 // End of session.php – do NOT add any whitespace, new lines, or closing tag after this line
