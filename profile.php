@@ -84,7 +84,7 @@
                         <!--  Display the delivery date
                                     Hint: If the delivery date is NULL, use the null-coalescing operator to display a placeholder message like "Pending"
                          -->
-                        <p><strong>Delivery Date:</strong> <?= $order['deliv_date'] ?? 'Pending' ?></p>
+                        <p><strong>Delivery Date:</strong> <?= $order['date_deliv'] ?? 'Pending' ?></p>
                     </div>
                 </div>
 
