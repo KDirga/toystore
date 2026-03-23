@@ -1,6 +1,6 @@
 <?php
 
-	include 'includes/header.php';
+	// include 'includes/header.php';
 	require_once 'includes/session.php';
 
 
