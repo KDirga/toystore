@@ -10,4 +10,4 @@
 
 	logout();											// Call the logout function to terminate session
 	header('Location: index.php');						// Redirect to index page
-?>
+	exit;												// Stop further code running
